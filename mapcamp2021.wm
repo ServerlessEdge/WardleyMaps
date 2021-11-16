@@ -1,0 +1,205 @@
+//--------------------------------------------------------
+//--------------------------------------------------------
+
+title Adaptation - The Serverless Edge & The Value Flywheel
+style wardley
+evolution Genesis - Concept->Custom - Hypothesis->Product - Theory->Commodity - Accepted
+anchor Senior Executive (CEO) [0.99, 0.55]
+
+//               ---- MAPCAMP 2021 ----
+
+//--------------------------------------------------------
+//--------------------------------------------------------
+
+// /*
+// sp1 - bottom lline.
+component Operational Efficiency [0.84, 0.72] label [26, -12]
+component Cost Management [0.75, 0.77] label [40, -21]
+component Time to Value [0.86, 0.55] label [-37, -11]
+
+// */
+
+//--------------------------------------------------------
+
+ /*
+// sp2 - top line
+component Customer Need/Obsession [0.78, 0.57] label [0, 13]
+component Secure Rapid Experimentation [0.82, 0.29] label [-90, -9]
+component Business Growth [0.86, 0.38] label [-69, -24]
+component Digital Modernization [0.75, 0.66] label [30, -20]
+
+ */
+//--- HERE
+
+//--------------------------------------------------------
+
+ /*
+// sp3 - IT Operational dreams
+component Cloud Self Service [0.47, 0.29] label [-63, -14]  inertia
+component Rapid Build [0.38, 0.39] label [15, 1]   inertia 
+component Robust Data Insights [0.34, 0.32]  inertia label [8, -15]
+component Security [0.29, 0.29] label [-75, -5]  inertia
+
+Cloud Self Service->Security
+Secure Rapid Experimentation->Cloud Self Service
+Cloud Self Service->Robust Data Insights
+
+// REMEMBER QUICK COMMENT TRICK FOR INERTIA
+
+ */
+//--- HERE
+
+//--------------------------------------------------------
+
+// /*
+// sp4 - Technical Strategy
+component Problem Prevention mindset [0.52, 0.70] label [19, -32]
+component Standards [0.32, 0.70] label [20, 7]
+component Sustainability [0.42, 0.62] label [-41, 24]
+
+// */
+
+//--------------------------------------------------------
+
+// /*
+// sp5 - Add the ILC Lens for the Flywheel effect.
+note Innovate - Clarity of Purpose  [0.93, 0.06]
+pioneers [0.92, 0.06, 0.66, 0.94]
+
+note Leverage - Next Best Action [0.57, 0.21]
+settlers [0.56, 0.21, 0.24, 0.49]
+
+note Commoditise - Long Term Value [0.57, 0.53]
+townplanners [0.56, 0.51, 0.24, 0.92]
+
+// */
+
+//--------------------------------------------------------
+
+// /*
+// sp6 - Add the missing component of the flywheel - MAPPING!!
+component Mapping [0.10, 0.53] label [-84, 6]
+component Challenge [0.07, 0.49] label [-40, 24]
+component Environment for Success [0.07, 0.60] label [32, -21]
+
+note Challenge [0.13, 0.40]
+townplanners [0.12, 0.40, 0.12, 0.70]
+
+// */
+
+//--------------------------------------------------------
+
+// sp7 - What about the Inertia? Unmark it above.
+// Inertia point is Treating the cloud as infrastructure
+// Inertia point is fear of serverless.
+// Inertia point is traditional Database mindset
+// Inertia point is traditional security.
+
+//--------------------------------------------------------
+
+ /*
+// sp8 - Map the movement if we get through the inertia.
+evolve Cloud Self Service 0.57
+evolve Rapid Build 0.57 label [-27, 10]
+evolve Robust Data Insights 0.57 
+evolve Security 0.57
+evolve Secure Rapid Experimentation 0.40
+
+ */
+////--- HERE
+
+//--------------------------------------------------------
+
+// /*
+// sp9 - show the impact of Commoditization
+
+// REMOVE SECOND+THIRD AND REMOVE EIGHT!!!
+
+component Cloud Self Service [0.47, 0.57] label [-63, -14] 
+component Rapid Build [0.38, 0.57] label [15, 1]  
+component Robust Data Insights [0.34, 0.57]
+component Security [0.27, 0.57] label [-45, -15] 
+
+component Customer Need/Obsession [0.78, 0.57] label [0, 13]
+component Secure Rapid Experimentation [0.73, 0.40] label [-90, -9]
+component Business Growth [0.86, 0.38] label [-69, -24]
+
+Rapid Build->Standards
+Standards->Security
+Rapid Build->Robust Data Insights
+Digital Modernization->Problem Prevention mindset
+
+Secure Rapid Experimentation->Problem Prevention mindset
+Problem Prevention mindset->Cloud Self Service
+
+// */
+
+//--------------------------------------------------------
+
+// /*
+// sp10 - Now we can be very strategic...
+component WHAT NEXT??? [0.78, 0.17] label [-75, -20]
+Business Growth->WHAT NEXT???
+component Enabling capability [0.50, 0.30] label [23, -19]
+WHAT NEXT???->Enabling capability
+Enabling capability->Mapping
+// */
+
+//--------------------------------------------------------
+
+// /* 
+// sp11 - Final narrative
+
+annotations [0.15, 0.02]
+annotation 1 [0.89, 0.50] Clarity of purpose SHOULD be fairly constant.
+annotation 2 [0.54, 0.19] But connecting to tactical Tech moves is hard.
+annotation 3 [0.54, 0.53] Real Technical Strategy often seems unobtainable.
+annotation 4 [0.14, 0.49] The Value Flywheel and Mapping show the way.
+annotation 5 [0.89, 0.14] With the Flywheel in effect, we can really innovate.
+
+note We rarely link the Top level with the mid level. [0.17, 0.70]
+note Hence, early innovation is hard to repeat. [0.15, 0.70]
+note Key mindsets: [0.13, 0.70]
+note Key mindsets: [0.13, 0.70]
+note Code is a Liability. [0.11, 0.72]
+note Sociotechnical systems. [0.09, 0.72]
+note Serverless First. [0.07, 0.72]
+note Eng Excellence & Problem Prevention create space. [0.05, 0.72]
+note ABM - Always Be Mapping! [0.03, 0.72]
+note For more, see @serverlessedge [0.01, 0.75]
+note For more, see @serverlessedge [0.01, 0.75]
+note For more, see @serverlessedge [0.01, 0.75]
+// */
+
+//--------------------------------------------------------
+//--------------------------------------------------------
+//--------------------------------------------------------
+
+Secure Rapid Experimentation->Data Access
+Data Access->Rapid Build
+Business Growth->Customer Need/Obsession
+Business Growth->Secure Rapid Experimentation
+Customer Need/Obsession->Digital Modernization
+Customer Need/Obsession->Secure Rapid Experimentation
+Cloud Self Service->Rapid Build
+Cost Management->Problem Prevention mindset
+Developer Enablement->Problem Prevention mindset
+Digital Modernization->Data Access
+Digital Modernization->Rapid Build
+Edge Computing->Secure Rapid Experimentation
+Product led->API Product strategy
+Operational Efficiency->Cost Management 
+Operational Efficiency->Digital Modernization
+Senior Executive (CEO)->Business Growth
+Senior Executive (CEO)->Operational Efficiency
+Problem Prevention mindset->Standards
+Problem Prevention mindset->Sustainability
+Senior Executive (CEO)->Time to Value
+Time to Value->Secure Rapid Experimentation
+Time to Value->Digital Modernization
+Time to Value->Customer Need/Obsession
+Time to Value->Operational Efficiency
+Security->Mapping
+Standards->Mapping
+Mapping->Challenge
+Mapping->Environment for Success
